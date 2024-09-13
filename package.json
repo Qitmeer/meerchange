@@ -1,0 +1,28 @@
+{
+  "name": "meerchange",
+  "version": "0.0.2",
+  "description": "meerchange",
+  "scripts": {
+    "clean": "rm -rf cache artifacts typechain typechain-types contracts/artifacts contracts/types contracts/dist",
+    "compile": "hardhat compile",
+    "tsc": "tsc",
+    "prepack": "./scripts/prepack.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hardhat": "^2.6.6",
+    "ts-mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "@typechain/ethers-v5": "^11.1.2",
+    "@typechain/hardhat": "^2.3.0",
+    "@types/mocha": "^9.0.0",
+    "table": "^6.8.0",
+    "typescript": "^4.3.5",
+    "typechain": "^8.1.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.2"
+  }
+}
