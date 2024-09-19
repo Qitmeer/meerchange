@@ -1,6 +1,6 @@
 {
   "name": "meerchange",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "meerchange",
   "scripts": {
     "clean": "rm -rf cache artifacts typechain typechain-types contracts/artifacts contracts/types contracts/dist",

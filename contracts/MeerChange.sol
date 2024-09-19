@@ -12,11 +12,6 @@ contract MeerChange {
     // events
     event Export(
         bytes32 txid,
-        uint32 idx
-    ); 
-
-    event Export4337(
-        bytes32 txid,
         uint32 idx,
         uint64 fee,
         string sig
@@ -25,16 +20,10 @@ contract MeerChange {
     event Import(
     ); 
 
-    // Export amount from UTXO
-    function export(bytes32 txid,uint32 idx) public {
-        exportCount++;
-        emit Export(txid,idx);
-    }
-
     // Export amount from UTXO by EIP-4337
-    function export4337(bytes32 txid,uint32 idx,uint64 fee,string calldata sig) public {
+    function export(bytes32 txid,uint32 idx,uint64 fee,string calldata sig) public {
         exportCount++;
-        emit Export4337(txid,idx,fee,sig);
+        emit Export(txid,idx,fee,sig);
     }
 
     // Get the count of export
